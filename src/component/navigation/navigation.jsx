@@ -12,31 +12,31 @@ const Navigation = () => {
         <ul className="list">
           <li className={`item `}>
             <NavLink to="/" className="link-navigation">
-              <HomeIcon />
+              <HomeIcon className="icon-nav"/>
               <span> Home</span>
             </NavLink>
           </li>
           <li className={`item `}>
             <NavLink to="/messenger" className="link-navigation">
-              <ChatBubbleOutlineOutlinedIcon />
+              <ChatBubbleOutlineOutlinedIcon className="icon-nav"/>
               <span>Messenger</span>
             </NavLink>
           </li>
           <li className={`item `}>
             <NavLink to="/profile" className="link-navigation">
-              <PersonIcon />
+              <PersonIcon className="icon-nav"/>
               <span>Profile</span>
             </NavLink>
           </li>
           <li className={`item `}>
             <NavLink to="/setting" className="link-navigation">
-              <SettingsIcon />
+              <SettingsIcon className="icon-nav"/>
               <span>Setting</span>
             </NavLink>
           </li>
           <li className={`item `}>
             <NavLink to="/about" className="link-navigation">
-              <LogoutOutlinedIcon />
+              <LogoutOutlinedIcon className="icon-nav"/>
               <span>About</span>
             </NavLink>
           </li>
