@@ -1,3 +1,15 @@
+:root {
+    --ti-cursor-color: #DC143C;
+    --ti-cursor-font-size: 52px;
+    --ti-cursor-transform: translateX(-.125em)
+  }
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 body {
     width: 100%;
     height: 100vh;
@@ -10,126 +22,6 @@ p {
     margin: 0;
 }
 
-.homeContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
-.box { 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 500px;
-    opacity: 1;
-    // background-color: #FFF;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    transition: 0.5s;
-    overflow: hidden;
-    .image{
-        width: 100%;
-        height: 100%;
-        transition: 0.5s;
-        img{
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        z-index: 3;
-    }
-
-    &:hover {
-        // opacity: 0.5;
-        .image {
-            opacity: 0.5;
-        }
-        .icon-Item {
-            opacity: 1;
-            z-index: 4;
-            transform: translateY(-150px);
-        }
-        .icon-Item:nth-child(1) {
-            transition-delay: 0s;
-        }
-        .icon-Item:nth-child(2) {
-            transition-delay: 0.2s;
-        }
-        .icon-Item:nth-child(3) {
-            transition-delay: 0.4s;
-        }
-        .icon-Item:nth-child(4) {
-            transition-delay: 0.6s;
-        }
-        .image {
-            transform: translateY(-50px);
-        }
-    }
-}
-
-.icon {
-    position: absolute;
-    bottom: 80px;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    padding: 0;
-
-}
-
-.icon-Item {
-    list-style-type: none;
-    text-decoration: none;
-
-    width: 40px;
-    height: 40px;
-    background-color: #FFF;
-    border: 1px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-        .link-icon{
-            transform: rotateY(360deg);
-        } 
-    }
-}
-
-.link-icon {
-    transition: 0.5s !important;
-    color: #000;
-}
-
-.detail {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFF;
-    transition: 0.5s;
-    // z-index:32;
-    h2 {
-        font-size: 16px;
-
-    }
-    p {
-        font-size: 14px;
-        color: #bbb;
-    }
+section {
+    padding: 100px 0;
 }

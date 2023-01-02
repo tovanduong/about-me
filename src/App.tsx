@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Navigation from "./component/navigation/navigation";
-import About from "./page/about";
-import Home from "./page/home";
-import Messenger from "./page/messenger";
-import Profile from "./page/profile";
-import Setting from "./page/setting";
+import Navigation from "./component/header/header";
+import About from "./page/about/about";
+import Home from "./page/home/home";
+import Messenger from "./page/contact/messenger";
+import Profile from "./page/certificate/profile";
+import Main from "./page/main";
+import Skill from "./page/skill/skill";
 
 function App() {
   return (
@@ -13,11 +14,10 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
-          <Route path="/messenger" element={<Messenger />} />
+          <Route path="/skill" element={<Skill />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/setting" element={<Setting />} />
         </Routes>
       </Router>
     </div>
