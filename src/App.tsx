@@ -2,9 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import Navigation from "./component/header/header";
 import About from "./page/about/about";
-import Home from "./page/home/home";
-import Messenger from "./page/contact/messenger";
-import Profile from "./page/certificate/profile";
+import Certificate from "./page/certificate/certificate";
+import Project from "./page/project/project";
 import Main from "./page/main";
 import Skill from "./page/skill/skill";
 
@@ -17,7 +16,8 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/skill" element={<Skill />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/certificate" element={<Certificate />} />
+          <Route path="/project" element={<Project />} />
         </Routes>
       </Router>
     </div>
