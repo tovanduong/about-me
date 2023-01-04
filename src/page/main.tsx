@@ -6,13 +6,13 @@ import Skill from "./skill/skill";
 
 const Main = () => {
   return (
-    <div>
+    <main>
       <Home />
       <About />
       <Skill />
       <Certificate />
       <Project />
-    </div>
+    </main>
   );
 };
 
