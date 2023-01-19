@@ -47,7 +47,7 @@ const Skill = () => {
   };
   return (
     <section className="sec-skill">
-      <div ref={divRef} className="skill-title">
+      <div className="skill-title">
         <h4>My Skill</h4>
         <span>What I Know</span>
       </div>
@@ -72,11 +72,11 @@ const Skill = () => {
                   end={counter[0]}
                   delay={3}
                 />
-                <div className="counting">%</div>
+                <div className="counting-per">%</div>
               </Box>
             )}
           </div>
-          <div className={`css ${classAnimation[1]}`}>
+          <div className={`css ${classAnimation[1]}`} ref={divRef}>
             <p>CSS:</p>
             <span></span>
             {counter.length && (
@@ -86,7 +86,7 @@ const Skill = () => {
                   end={counter[1]}
                   delay={3}
                 />
-                <div className="counting">%</div>
+                <div className="counting-per">%</div>
               </Box>
             )}
           </div>
@@ -100,7 +100,7 @@ const Skill = () => {
                   end={counter[2]}
                   delay={3}
                 />
-                <div className="counting">%</div>
+                <div className="counting-per">%</div>
               </Box>
             )}
           </div>
@@ -114,7 +114,7 @@ const Skill = () => {
                   end={counter[3]}
                   delay={3}
                 />
-                <div className="counting">%</div>
+                <div className="counting-per">%</div>
               </Box>
             )}
           </div>

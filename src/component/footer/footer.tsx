@@ -1,5 +1,10 @@
 import React from "react";
 import "./footerStyle.scss";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
 const Footer = () => {
   return (
     <footer className="sec-footer">
@@ -17,6 +22,30 @@ const Footer = () => {
           <div className="info-footer">
             <span>Address:</span>
             <p>Vinh Bao street, Hai Phong city</p>
+          </div>
+          <div className="info-footer-icon">
+            <ul className="icon-list-footer">
+              <li className="icon-Item-footer">
+                <a href="/">
+                  <FacebookIcon className="link-icon-footer" />
+                </a>
+              </li>
+              <li className="icon-Item-footer">
+                <a href="/">
+                  <TwitterIcon className="link-icon-footer" />
+                </a>
+              </li>
+              <li className="icon-Item-footer">
+                <a href="/">
+                  <InstagramIcon className="link-icon-footer" />
+                </a>
+              </li>
+              <li className="icon-Item-footer">
+                <a href="/">
+                  <YouTubeIcon className="link-icon-footer" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="contact-me">
