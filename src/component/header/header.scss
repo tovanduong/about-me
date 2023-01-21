@@ -65,6 +65,12 @@
   display: none;
 }
 
+@media (max-width:1200px) {
+  .header-list {
+    padding-left: 0px;
+  }
+}
+
 @media (max-width: 900px) {
   .close {
     background-color: #dc143c;

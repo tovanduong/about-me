@@ -56,3 +56,35 @@
   font-size: 20px;
   line-height: 1.5;
 }
+
+.cardInfo-certi {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  gap: 35px;
+  padding: 0 30px;
+}
+
+@media (max-width:900px) {
+  .cardInfo-certi {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .my-certificate {
+    h4 {
+      font-size: 41px;
+
+    }
+    span {
+      font-size: 28px;
+      width: 100%;
+      max-width: 200px;
+      text-align: center;
+    }
+  }
+  .cardInfo-certi {
+    padding: 0;
+  }
+}

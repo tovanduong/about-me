@@ -1,14 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./aboutStyle.scss";
 import CardInfo from "./cardInfo/cardInfo";
-
-
 const About = () => {
+  const [classSection, setClassSection] = useState<string>("");
+  let location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setClassSection("");
+    } else {
+      setClassSection("layoutSec");
+    }
+  }, [location.pathname]);
+
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
+
   return (
-    <section className="sec-about">
+    <section className={`sec-about ${classSection}`}>
       <div className="about-me">
         <h4>About Me</h4>
         <span>Who am I</span>

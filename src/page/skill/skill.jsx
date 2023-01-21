@@ -9,7 +9,15 @@ const Skill = () => {
   const [isIntoView, setIsIntoView] = useState(false);
   const [classAnimation, setClassAnimation] = useState([]);
   const [counter, setCounter] = useState([]);
+  const [classSection, setClassSection] = useState("");
   let location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setClassSection("");
+    } else {
+      setClassSection("layoutSec");
+    }
+  }, [location.pathname]);
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
@@ -46,7 +54,7 @@ const Skill = () => {
     );
   };
   return (
-    <section className="sec-skill">
+    <section className={`sec-skill ${classSection}`}>
       <div className="skill-title">
         <h4>My Skill</h4>
         <span>What I Know</span>

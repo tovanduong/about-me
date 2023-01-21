@@ -251,3 +251,9 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width:500px) {
+  .info-text {
+    font-size: 14px;
+  }
+}

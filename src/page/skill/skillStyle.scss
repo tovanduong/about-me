@@ -273,5 +273,22 @@
   }
 }
 
-@media (max-width: 900px) {
+
+@media (max-width: 500px) {
+  .skill-title {
+    h4 {
+      font-size: 41px;
+    }
+    span {
+      font-size: 28px;
+    }
+  }
+  .info-skill{
+    font-size: 14px;
+  }
+  .chart-skill {
+    p {
+      font-size: 18px;
+    }
+  }
 }

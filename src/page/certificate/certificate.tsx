@@ -5,8 +5,18 @@ import Certi1 from "../../image/certi1.PNG";
 import Certi2 from "../../image/certi2.PNG";
 import Certi3 from "../../image/certi3.PNG";
 import Certi4 from "../../image/certi4.PNG";
+import { useLocation } from "react-router-dom";
 const Certificate = () => {
   const [listImage, setListImage] = useState<any[]>([]);
+  const [classSection, setClassSection] = useState<string>("");
+  let location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setClassSection("");
+    } else {
+      setClassSection("layoutSec");
+    }
+  }, [location.pathname]);
   useEffect(()=>{
     window.scrollTo(0,0)
   },[])
@@ -35,12 +45,12 @@ const Certificate = () => {
     ]);
   }, []);
   return (
-    <section className="sec-certificate">
+    <section className={`sec-certificate ${classSection}`}>
       <div className="my-certificate">
         <h4>My Certificate</h4>
         <span>what i have achieved</span>
       </div>
-      <div className="cardInfo">
+      <div className="cardInfo-certi">
         {listImage &&
           listImage.map((el: any, index) => {
             return (

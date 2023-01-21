@@ -56,13 +56,17 @@
   }
 }
 
+.prj-container {
+  padding: 0 30px;
+
+}
+
 .cardPrjInfo {
   flex-direction: column;
   display: flex;
   width: 100%;
   max-width: 1300px;
   gap: 35px;
-  padding: 0 30px;
 }
 
 .card-item {
@@ -76,9 +80,39 @@
   color: #000;
 }
 
+.note-prj {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
 @media (max-width: 900px) {
   .card-item {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .prj-title {
+    h4 {
+      font-size: 41px;
+
+    }
+    span {
+      font-size: 28px;
+    }
+  }
+
+  .card-item {
+    margin: 0;
+  }
+  .prj-text {
+    font-size: 14px;
+  }
+
+  .note-prj {
+    margin-top: 35px;
+    font-size: 14px;
   }
 }
