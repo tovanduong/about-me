@@ -10,7 +10,9 @@ const Skill = () => {
   const [classAnimation, setClassAnimation] = useState([]);
   const [counter, setCounter] = useState([]);
   let location = useLocation();
-
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   useEffect(() => {
     window.addEventListener("scroll", onListenScroll);
     return () => {
@@ -25,8 +27,6 @@ const Skill = () => {
     }
   };
   useEffect(() => {
-    console.log(isIntoView);
-
     if (isIntoView || location.pathname === "/skill") {
       setClassAnimation(["activeHtml", "activeCss", "activeJs", "activeReact"]);
       setCounter([75, 85, 80, 90]);
@@ -53,13 +53,7 @@ const Skill = () => {
       </div>
       <div className="skill-group">
         <p className="info-skill">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum quae
-          eaque earum voluptatibus dignissimos at corrupti rem fugit adipisci
-          perspiciatis, cum veniam officia omnis ullam voluptas, mollitia facere
-          aperiam? Deleniti. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Dolorum quae eaque earum voluptatibus dignissimos at corrupti
-          rem fugit adipisci perspiciatis, cum veniam officia omnis ullam
-          voluptas, mollitia facere aperiam? Deleniti.
+        During my study and work, I had certain skills to complete the tasks of 1 FE. First, it is indispensable for basic knowledge such as html, css, javascript. During 1 year of working with react js, I self-assessed my competence in react js. Also I know about libraries to support like styled-component, material ui, axios and end to end testing like cypress.
         </p>
         <div className="chart-skill">
           <div className={`html ${classAnimation[0]}`}>

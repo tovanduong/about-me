@@ -7,27 +7,30 @@ import Certi3 from "../../image/certi3.PNG";
 import Certi4 from "../../image/certi4.PNG";
 const Certificate = () => {
   const [listImage, setListImage] = useState<any[]>([]);
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   useEffect(() => {
     setListImage([
       {
         image: Certi1,
         title: "ReactJs Certificate",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio, atque soluta fugiat veritatis inventore sequi doloremque laboriosam. Eius numquam non sit ipsa dignissimos porro, corporis at sed quisquam blanditiis?",
+        info: "This is a certificate of react js course, a library of front-end web front-end code. I finished it with a perfect score of 10/10",
       },
       {
         image: Certi2,
         title: "Javascript Certificate",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio, atque soluta fugiat veritatis inventore sequi doloremque laboriosam. Eius numquam non sit ipsa dignissimos porro, corporis at sed quisquam blanditiis?",
+        info: "This is funix's javascript course completion certificate. Through the course, I have a good understanding of javascript as well as additional related knowledge such as jquery, fetch data, data processing...",
       },
       {
         image: Certi3,
         title: "HTML/CSS Certificate",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio, atque soluta fugiat veritatis inventore sequi doloremque laboriosam. Eius numquam non sit ipsa dignissimos porro, corporis at sed quisquam blanditiis?",
+        info: "This is my first certificate, it is the foundation knowledge that every FE must have. Through this, I also built my first website.",
       },
       {
         image: Certi4,
         title: "DataBase Certificate",
-        info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio, atque soluta fugiat veritatis inventore sequi doloremque laboriosam. Eius numquam non sit ipsa dignissimos porro, corporis at sed quisquam blanditiis?",
+        info: "This is my extra course to supplement my knowledge of databases. Through this I learned more about querying data, using SQL server.",
       },
     ]);
   }, []);
@@ -39,9 +42,10 @@ const Certificate = () => {
       </div>
       <div className="cardInfo">
         {listImage &&
-          listImage.map((el: any) => {
+          listImage.map((el: any, index) => {
             return (
               <CardCetificate
+                key={index}
                 image={el.image}
                 info={el.info}
                 title={el.title}
@@ -50,19 +54,7 @@ const Certificate = () => {
           })}
       </div>
       <div className="introdule-certi">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-        ducimus nisi, vitae suscipit neque ex officia nesciunt incidunt, quis
-        animi doloribus asperiores dolores fuga iste? Possimus nostrum ex at
-        ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-        facere debitis tenetur minus amet quod, est totam dolore sapiente
-        deserunt expedita quas illo dolorem ipsam rerum aliquam consectetur odit
-        maxime. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Ratione, ducimus nisi, vitae suscipit neque ex officia nesciunt
-        incidunt, quis animi doloribus asperiores dolores fuga iste? Possimus
-        nostrum ex at ullam? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Iure facere debitis tenetur minus amet quod, est totam dolore
-        sapiente deserunt expedita quas illo dolorem ipsam rerum aliquam
-        consectetur odit maxime.
+      Through what has been achieved. I will try to improve myself further. I am confident about my long-term plan. That is gaining Node Js certification to become a fullstack dev. But the short-term plan is to improve skills and become a more complete front-end dev.
       </div>
     </section>
   );

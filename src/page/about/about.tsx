@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import "./aboutStyle.scss";
 import CardInfo from "./cardInfo/cardInfo";
+
+
 const About = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <section className="sec-about">
       <div className="about-me">
@@ -10,33 +16,11 @@ const About = () => {
       <div className="cardInfo">
         <CardInfo />
         <div className="about-info">
-          <div className="info-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
-            voluptatibus voluptatum ex, illo earum quam! Reiciendis, porro
-            perspiciatis officiis distinctio optio vero eveniet deserunt,
-            veritatis aut ipsa consectetur modi soluta? Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Ipsa voluptatibus voluptatum ex,
-            illo earum quam! Reiciendis, porro perspiciatis officiis distinctio
-            optio vero eveniet deserunt, veritatis aut ipsa consectetur modi
-            soluta? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Ipsa voluptatibus voluptatum ex, illo earum quam! Reiciendis, porro
-            perspiciatis officiis distinctio optio vero eveniet deserunt,
-            veritatis aut ipsa consectetur modi soluta? Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Ipsa voluptatibus voluptatum ex,
-            illo earum quam! Reiciendis, porro perspiciatis officiis distinctio
-            optio vero eveniet deserunt, veritatis aut ipsa consectetur modi
-            soluta? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Ipsa voluptatibus voluptatum ex, illo earum quam! Reiciendis, porro
-            perspiciatis officiis distinctio optio vero eveniet deserunt,
-            veritatis aut ipsa consectetur modi soluta? Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Ipsa voluptatibus voluptatum ex,
-            illo earum quam! Reiciendis, porro perspiciatis officiis distinctio
-            optio vero eveniet deserunt, veritatis aut ipsa consectetur modi
-            soluta? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Ipsa voluptatibus voluptatum ex, illo earum quam! Reiciendis, porro
-            perspiciatis officiis distinctio optio vero eveniet deserunt,
-            veritatis aut ipsa consectetur modi soluta?
-          </div>
+          <p className="info-text">
+          Hello! My name is Duong, I am a front end developer, I graduated from Hanoi University of Industry. I have 1 year experience in website development. I always try to learn and develop myself, learn new technologies and make good use of what I already have. There are 2 things I always follow, it's like a rule of mine. First, As an FE, I am aware of the importance of user interface (ui) and user experience (ux). I always try to put myself as a user so that I can develop the best websites with high performance. Second, I always uphold credibility and responsibility (not finished task, not resting).
+          <br/>
+          <i><strong>Trust me and give me a chance, I will prove my worth.</strong></i>
+          </p>
           <button className="info-button">Download my cv</button>
         </div>
       </div>
@@ -45,3 +29,5 @@ const About = () => {
 };
 
 export default About;
+
+

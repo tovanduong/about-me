@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import { TypeComponent } from "../../component/header/typeComponent/type";
 import "./homeStyle.scss";
 const Home = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <section className="sec-home">
       <div className="banner">
