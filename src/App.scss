@@ -4,7 +4,6 @@
   --ti-cursor-transform: translateX(-0.125em);
 }
 
-
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -30,6 +29,10 @@ section {
   padding: 50px 0;
 }
 
+.layoutSec {
+  padding: 100px 0;
+}
+
 @media (max-width: 900px) {
   :root {
     --ti-cursor-font-size: 28px;
@@ -40,9 +43,8 @@ section {
 }
 
 @media (max-width: 500px) {
-    :root {
-      --ti-cursor-font-size: 18px;
-      --ti-cursor-transform: translateX(0);
-    }
-
+  :root {
+    --ti-cursor-font-size: 18px;
+    --ti-cursor-transform: translateX(0);
+  }
 }
